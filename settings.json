@@ -122,31 +122,45 @@
       "background-repeat": "no-repeat !important",
       "background-position": "bottom !important"
    },
-   ".tabs-container": {
-      "background-image": "linear-gradient(to top, #25262a 1px, transparent 1px) !important",
-      "background-repeat": "no-repeat !important",
-      "background-position": "bottom !important"
+   ".monaco-workbench .part.editor .tabs-container": {
+      "background-color": "var(--vscode-editorGroupHeader-tabsBackground) !important",
+      "border-bottom": "none !important"
    },
-   ".tab": {
-      "margin": "0 !important",
+   ".monaco-workbench .part.editor .tabs-container .tab": {
+      "margin-top": "6px !important",
+      "border-top-left-radius": "var(--islands-item-radius) !important",
+      "border-top-right-radius": "var(--islands-item-radius) !important",
+      "border-top": "none !important",
+      "border-left": "none !important",
       "border-right": "none !important",
-      "border-radius": "var(--islands-item-radius) var(--islands-item-radius) 0 0 !important",
-      "font-family": "'Bear Sans UI', sans-serif !important",
-      "display": "flex !important",
-      "align-items": "center !important"
+      "background-color": "var(--vscode-editorGroupHeader-tabsBackground) !important"
    },
    ".tab .tab-actions .action-label": {
       "border-radius": "50% !important"
    },
-   ".tab.active": {
-      "box-shadow": "inset -1px 0 0 0 #25262a, inset 1px 0 0 0 #25262a !important",
-      "border-right": "none !important"
+   ".monaco-workbench .part.editor .tabs-container .tab.active": {
+      "background-color": "var(--vscode-editor-background) !important",
+      "border-bottom": "none !important",
+      "box-shadow": "none !important",
+      "z-index": "1 !important"
    },
-   ".tab:not(.active)": {
-      "box-shadow": "inset 0 -1px 0 0 #25262a !important"
+   ".monaco-workbench .part.editor .tabs-container .tab.active::before": {
+      "display": "none !important",
+      "content": "'' !important"
    },
-   ".tab.active:first-child": {
-      "box-shadow": "inset -1px 0 0 0 #25262a !important"
+   ".monaco-workbench .part.editor .tabs-container .tab.active::after": {
+      "display": "none !important",
+      "content": "'' !important"
+   },
+   ".monaco-workbench .part.editor .tabs-container .tab:not(.active)": {
+      "background-color": "var(--vscode-editorGroupHeader-tabsBackground) !important",
+      "border-bottom": "1px solid rgba(0,0,0,0.06) !important"
+   },
+   ".monaco-workbench .part.editor .tabs-container .tab.tab-border-top": {
+      "border-top": "none !important"
+   },
+   ".monaco-workbench .part.editor .tabs-container .tab.tab-border-bottom": {
+      "border-bottom": "none !important"
    },
    ".tab:hover .label-name": {
       "text-shadow": "0 0 5px rgba(255,255,255,0.15) !important",
@@ -178,10 +192,6 @@
    ".split-view-view:has(.terminal-tabs-entry)": {
       "min-width": "220px !important",
       "border-bottom": "none !important"
-   },
-   ".part.panel.bottom .tabs-container": {
-      "border-bottom": "none !important",
-      "background-image": "none !important"
    },
    ".split-view-view:has(.terminal-tabs-entry) .monaco-list-row": {
       "border-radius": "var(--islands-item-radius) !important",
