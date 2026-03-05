@@ -1,4 +1,4 @@
-# Islands Dark
+# Islands Claude
 
 <a href="https://www.buymeacoffee.com/bwya77" style="margin-right: 10px;">
     <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" />
@@ -8,7 +8,9 @@
 </a>
 
 
-A dark color theme for Visual Studio Code inspired by the easemate IDE. Features floating glass-like panels, rounded corners, smooth animations, and a deeply refined UI.
+A warm gray/creamy light theme for Visual Studio Code — low-contrast, reading-friendly, and calm.
+
+> Fork note: This is a fork of Islands Dark. Some scripts/docs still reference the upstream name; for now, prefer VSIX install.
 
 - [easemate](https://x.com/easemate)
 - [easemate Nav](https://x.com/Jakubantalik/status/1952672176450215944)
